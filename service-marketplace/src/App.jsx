@@ -7,6 +7,7 @@ import Register from './pages/Register.jsx'
 import Login from './pages/Login.jsx'
 import BuyerDashboard from './pages/BuyerDashboard.jsx'
 import SellerDashboard from './pages/SellerDashboard.jsx'
+import NotFound from './pages/NotFound.jsx'
 
 const AppLayout = () => (
   <>
@@ -26,7 +27,7 @@ const App = () => (
       <Route path="/login" element={<Login />} />
       <Route path="/buyer" element={<BuyerDashboard />} />
       <Route path="/seller" element={<SellerDashboard />} />
-      <Route path="*" element={<Home />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   </Routes>
 )
